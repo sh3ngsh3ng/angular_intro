@@ -13,4 +13,4 @@
     - E.g. 7.2.11
 
 
-
+Set -ExecutionPolicy -ExecutionPolicyRemoteSigned -Scope CurrentUser
