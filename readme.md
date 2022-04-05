@@ -11,6 +11,9 @@
     - minor = added feature
     - patch = updates/bug fix
     - E.g. 7.2.11
+- Module = Services + Components
+    - Components = HTML & classes
+    - Services = 
 
 
 Set -ExecutionPolicy -ExecutionPolicyRemoteSigned -Scope CurrentUser
