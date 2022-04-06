@@ -20,7 +20,8 @@
     - code, typescript, data & fucntions/methods
 - Metadata
     - @Component
-
+- Property Binding
+    - Property vs attribute
 
 
 Set -ExecutionPolicy -ExecutionPolicyRemoteSigned -Scope CurrentUser
