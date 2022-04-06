@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
     <h1 [style.color]="check ? 'green' : 'red'">Demo 3</h1>
     <h1 [ngStyle]="allStyles">Demo 4</h1>
     <button [value]="" (click)="buttonClicked($event)">Click this button</button>
+    <input type="text" [(ngModel)]="name">{{name}}
   `,
   styles: [`
     .green {
@@ -39,13 +40,12 @@ export class PropertybindingtestComponent implements OnInit {
     backgroundColor: "black"
   }
 
-  public msg = ""
+  public name = ""
 
   buttonClicked(event:MouseEvent) {
     console.log("Button Clicked");
     console.log(event);
     // event.target.valu = "Button Clicked";
-    this.msg = "Button is clicked";
   }
 
   constructor() { }
