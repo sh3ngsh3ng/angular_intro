@@ -22,6 +22,11 @@
     - @Component
 - Property Binding
     - Property vs attribute
-
+    - Attributes are not going to change
+    - Attributes are always defined by html
+    - Properties are always defined by the DOM
+    - Attributes initialize the DOM properties
+- Multiple styles
+    - Using ngClass
 
 Set -ExecutionPolicy -ExecutionPolicyRemoteSigned -Scope CurrentUser
