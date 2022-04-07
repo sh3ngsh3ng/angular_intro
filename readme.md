@@ -28,5 +28,14 @@
     - Attributes initialize the DOM properties
 - Multiple styles
     - Using ngClass
+- Directives
+    - Predefined meaning by angular
+- Structural Directives
+    - Remove HTML elements
+    - ngIf, ngFor, ngSwitch
+- Data Flow
+    - 
+
+
 
 Set -ExecutionPolicy -ExecutionPolicyRemoteSigned -Scope CurrentUser
