@@ -1,0 +1,14 @@
+
+
+<h1>Structural Directives</h1>
+
+
+<button (click)="displayText()">Click to toggle the text below</button>
+<h2 *ngIf="flag; else elseBlock">ngIf on this element. If condition</h2>
+<ng-template #elseBlock>
+    <h2>ngIf on this element. Else condition</h2>
+</ng-template>
+
+
+
+
