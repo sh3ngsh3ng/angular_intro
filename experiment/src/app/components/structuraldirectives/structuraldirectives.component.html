@@ -2,12 +2,42 @@
 
 <h1>Structural Directives</h1>
 
+<h2>ngIf</h2>
 
 <button (click)="displayText()">Click to toggle the text below</button>
-<h2 *ngIf="flag; else elseBlock">ngIf on this element. If condition</h2>
+<h5 *ngIf="flag; else elseBlock">ngIf on this element. When condition is true.</h5>
 <ng-template #elseBlock>
-    <h2>ngIf on this element. Else condition</h2>
+    <h5>ngIf on this element. When condition is false</h5>
 </ng-template>
+
+
+<button (click)="displayText2()">Click to toggle the text below</button>
+ <div *ngIf="flag2; then valueTrue else valueFalse"></div>
+ <ng-template #valueTrue>
+    <h5>This is the true block</h5>
+</ng-template>
+<ng-template #valueFalse>
+    <h5>This is the false block</h5>
+</ng-template>
+
+
+<h2>ngSwitch</h2>
+<div [ngSwitch]="day">
+    <div *ngSwitchCase = "'mon'" >You have chosen monday</div>
+    <div *ngSwitchCase = "'tues'" >You have chosen tuesday</div>
+    <div *ngSwitchCase = "'wed'" >You have chosen wednesday</div>
+    <div *ngSwitchDefault>This is default</div>
+</div>
+
+
+<h2>ngFor</h2>
+<div *ngFor="let individual of participants; index as index; even as even">
+    <!-- <h5>{{index}}: {{individual}}</h5> -->
+    <h5 *ngIf="!even">{{individual}}</h5>
+    <!-- index and even are a local variable -->
+</div>
+
+
 
 
 
