@@ -1,0 +1,5 @@
+<h1>Below is the parentchilddata component</h1>
+<div style="border: 1px black solid">
+    <h5>{{message}}</h5>
+    <app-childparentdata (childEvent)="message=$event" [dataFromParent]="msg"></app-childparentdata>
+</div>
