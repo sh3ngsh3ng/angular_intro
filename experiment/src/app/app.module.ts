@@ -6,6 +6,7 @@ import { PropertybindingtestComponent } from './components/propertybindingtest/p
 import { StructuraldirectivesComponent } from './components/structuraldirectives/structuraldirectives.component';
 import { ParentchilddataComponent } from './components/parentchilddata/parentchilddata.component';
 import { ChildparentdataComponent } from './components/childparentdata/childparentdata.component';
+import { ServicesComponent } from './components/services/services.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ChildparentdataComponent } from './components/childparentdata/childpare
     PropertybindingtestComponent,
     StructuraldirectivesComponent,
     ParentchilddataComponent,
-    ChildparentdataComponent
+    ChildparentdataComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,

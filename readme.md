@@ -34,7 +34,14 @@
     - Remove HTML elements
     - ngIf, ngFor, ngSwitch
 - Data Flow
-    - 
+    - Component to template = property binding??
+    - Template to component = event binding??
+- Dependency injection
+    - As a design patter = dependencies not created in same class, constructor???
+    - as a framework
+        - create and write a Service Class
+        - Service Class should be registered with the Injector
+        - Write/declare the dependency
 
 
 
