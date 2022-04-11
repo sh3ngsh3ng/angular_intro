@@ -7,8 +7,10 @@ import { StructuraldirectivesComponent } from './components/structuraldirectives
 import { ParentchilddataComponent } from './components/parentchilddata/parentchilddata.component';
 import { ChildparentdataComponent } from './components/childparentdata/childparentdata.component';
 import { ServicesComponent } from './components/services/services.component';
+
 import { EmployeeService } from './services/employee.service';
 import { PipesComponent } from './components/pipes/pipes.component';
+
 
 @NgModule({
   declarations: [
