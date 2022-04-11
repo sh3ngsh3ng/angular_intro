@@ -54,6 +54,7 @@
         - Template Driven Forms
             - Hard to perform unit testing with template driven forms
             - If a lot of validation, template driven form not good
+            - Good for when form is simple and no unit testing needed.
         - Reactive Forms
 
 
