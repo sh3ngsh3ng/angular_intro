@@ -42,7 +42,13 @@
         - create and write a Service Class
         - Service Class should be registered with the Injector
         - Write/declare the dependency
-
+- Forms
+    - Data Binding
+    - Change Tracking
+    - Validation
+    - Visual Feedbacks
+    - Error Messages
+    - Form submissions
 
 
 Set -ExecutionPolicy -ExecutionPolicyRemoteSigned -Scope CurrentUser
