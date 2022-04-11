@@ -49,6 +49,12 @@
     - Visual Feedbacks
     - Error Messages
     - Form submissions
+    - Data Flow = Template (collects data) -> Class (bind data) -> Service (send data) -> server
+    - Types of forms
+        - Template Driven Forms
+            - Hard to perform unit testing with template driven forms
+            - If a lot of validation, template driven form not good
+        - Reactive Forms
 
 
 Set -ExecutionPolicy -ExecutionPolicyRemoteSigned -Scope CurrentUser
