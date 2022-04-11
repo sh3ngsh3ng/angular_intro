@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FoodListDataService } from './services/food-list-data.service';
 // import { FoodListComponent } from './components/food-list/food-list.component';
 // import { ElectronicListComponent } from './components/electronic-list/electronic-list.component';
 
@@ -17,7 +18,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [FoodListDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
