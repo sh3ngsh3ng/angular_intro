@@ -1,14 +1,18 @@
 
+<input [(ngModel)]="name">
+
 <div>
   <form #userForm="ngForm">
     {{userForm.value | json}}
+    <hr>
+    {{userData | json}}
   <div>
     <label>Name: </label>
-    <input type="text" name="name" class="form-control" ngModel>
+    <input type="text" name="name" class="form-control" [ngModel] = "userData.name">
   </div>
   <div>
     <label>Email: </label>
-    <input type="email" name="email" class="form-control" ngModel>
+    <input type="email" name="email" #email class="form-control" [class.is-invalid]="!email.checkValidity()" [(ngModel)] = "userData.email"> 
   </div>
 
   <div ngModelGroup="jobRole">
@@ -25,11 +29,14 @@
 
   <div>
     <label>Mobile Number: </label>
-    <input type="number" name="mobile" class="form-control" ngModel>
+    <input type="number" name="mobile" #mobile class="form-control" ngModel>
+    {{mobile.className}}
   </div>
   <div>
-    <label>Email: </label>
-    <input type="email" name="email" class="form-control" ngModel>
+    <label>Hobby: </label>
+    <input type="number" name="hobby" #hobby class="form-control" [class.is-invalid]="!hobby.checkValidity()" ngModel>
+    {{hobby.className}}<br>
+    <span>Is data valid: </span>{{hobby.checkValidity()}}
   </div>
   <div>
     <select class="form-select" name="country" ngModel>
