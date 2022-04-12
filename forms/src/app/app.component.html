@@ -1,24 +1,38 @@
 
 <div>
   <form #userForm="ngForm">
+    {{userForm.value | json}}
   <div>
     <label>Name: </label>
-    <input type="text" name="name" class="form-control">
+    <input type="text" name="name" class="form-control" ngModel>
   </div>
   <div>
     <label>Email: </label>
-    <input type="email" name="email" class="form-control">
+    <input type="email" name="email" class="form-control" ngModel>
   </div>
+
+  <div ngModelGroup="jobRole">
+    <div class="form-group">
+      <label>Role: </label>
+      <input type="email" name="role" class="form-control" ngModel>
+    </div>
+    <div class="form-group">
+      <label>Dept: </label>
+      <input type="email" name="department" class="form-control" ngModel>
+    </div>
+  </div>
+
+
   <div>
     <label>Mobile Number: </label>
-    <input type="number" name="mobile" class="form-control">
+    <input type="number" name="mobile" class="form-control" ngModel>
   </div>
   <div>
     <label>Email: </label>
-    <input type="email" name="email" class="form-control">
+    <input type="email" name="email" class="form-control" ngModel>
   </div>
   <div>
-    <select class="form-select">
+    <select class="form-select" name="country" ngModel>
       <option selected>Select a country...</option>
       <option *ngFor="let city of cities">
         {{city}}
