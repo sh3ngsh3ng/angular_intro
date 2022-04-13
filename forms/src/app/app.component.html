@@ -12,7 +12,8 @@
   </div>
   <div>
     <label>Email: </label>
-    <input type="email" name="email" #email class="form-control" [class.is-invalid]="!email.checkValidity()" [(ngModel)] = "userData.email"> 
+    <input type="email" name="email" #email class="form-control" [class.is-invalid]="!email.checkValidity()" [(ngModel)] = "userData.email">
+    <small class="text-danger" [class.d-none]="!email.checkValidity()">Must not be empty</small> 
   </div>
 
   <div ngModelGroup="jobRole">
